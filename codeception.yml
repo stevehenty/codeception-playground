@@ -1,0 +1,23 @@
+actor: Tester
+params:
+  - env
+
+paths:
+  tests: tests
+  log: tests/_output
+  data: tests/_data
+  helpers: tests/_support
+settings:
+  colors: true
+  memory_limit: 1024M
+modules:
+  enabled:
+    - WebDriver
+  config:
+    WPWebDriver:
+      host: chrome
+      url: 'http://twitter.com'
+      browser: chrome
+      port: 4444
+      window_size: '1024x768'
+      restart: true
