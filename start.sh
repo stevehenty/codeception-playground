@@ -16,5 +16,6 @@ fi
 
 ./codecept.phar run -vv --html
 
+# Uncomment the lines below to stop and remove the chrome container after running the tests
 #docker stop chrome
 #docker rm chrome
